@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import readline from "readline";
 
 const client = new OpenAI({
-  apiKey: "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"
+  apiKey: ""
 });
 
 
@@ -48,3 +48,4 @@ ${resumeText}
     console.error("Error:", error);
   }
 });
+
