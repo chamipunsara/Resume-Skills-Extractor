@@ -25,6 +25,7 @@ This mini app demonstrates how **prompt engineering** can be used to build real-
 ---
 
 Example Output:
+
 json
 {
   "technical_skills": [
@@ -34,6 +35,7 @@ json
     "MySQL", "MongoDB", "SQL Server", "REST API",
     "UML Diagrams", "Data Structures & Algorithms", "OOP"
   ],
+  
   "personal_skills": [
     "Effective Communication", "Teamwork",
     "Presentation Skills", "Time Management",
