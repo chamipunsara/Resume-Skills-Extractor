@@ -10,9 +10,8 @@ This mini app demonstrates how **prompt engineering** can be used to build real-
 
 - Extracts **technical skills** (programming languages, frameworks, tools, databases, etc.)
 - Extracts **personal skills** (communication, teamwork, creativity, etc.)
-- Supports **text file input** (`resume.txt`) or manual multi-line input
+- Accepts **manual multi-line input** via command prompt
 - Outputs results as **JSON**
-- Optionally saves results to `skills.json`
 
 ---
 
@@ -24,9 +23,21 @@ This mini app demonstrates how **prompt engineering** can be used to build real-
 
 ---
 
-Example Output:
+## Usage
 
+1. Run the app:
+
+```bash
+node index.js
+Paste your full resume into the command prompt.
+
+Type END on a new line when finished.
+
+The extracted skills will appear as JSON in the terminal.
+
+Example Output
 json
+Copy code
 {
   "technical_skills": [
     "Java", "Python", "C++", "C#", "JavaScript",
@@ -42,8 +53,9 @@ json
     "Creativity", "Problem-Solving Skills"
   ]
 }
+How it Works
+The app reads the resume text you paste into the command prompt.
 
-How it Works:
-The app reads the resume text.
-Sends the text to OpenAI GPT API with a prompt to extract skills.
+Sends the text to the OpenAI GPT API with a prompt to extract skills.
+
 Returns JSON with technical_skills and personal_skills.
